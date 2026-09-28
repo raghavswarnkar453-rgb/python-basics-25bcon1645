@@ -1,0 +1,104 @@
+:root {
+  --bg: #f5f6f8;
+  --card: #ffffff;
+  --text: #1f2430;
+  --muted: #5b6373;
+  --accent: #2b5fd9;
+  --border: #e2e5ec;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.site-header {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.site-header h1 {
+  margin: 0 0 0.5rem;
+  font-size: 2.25rem;
+}
+
+.tagline {
+  margin: 0;
+  opacity: 0.9;
+}
+
+main {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  font-size: 1.4rem;
+}
+
+a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+}
+
+.projects-list {
+  padding: 0;
+  list-style: none;
+}
+
+.projects-list li {
+  margin-bottom: 1rem;
+}
+
+.projects-list p {
+  margin: 0.25rem 0 0;
+  color: var(--muted);
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1.5rem 1rem 2.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
